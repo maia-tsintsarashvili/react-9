@@ -1,7 +1,8 @@
 import { TextField } from '@mui/material'
 import React from 'react'
 
-export const Input = ({type = "text",label,error,helperText }) => {
+export const Input =({
+  type = "text",label,error,helperText,name,onChange,value,styles={}, }) => {
   return (
    <TextField
    type={type}
@@ -12,13 +13,17 @@ export const Input = ({type = "text",label,error,helperText }) => {
    error={error}
    helperText={helperText}
    sx={{
+    width:"100%",
+    marginTop:3,
+    "& fieldset":{
+      borderRadius: "20px",
+    },
+    ...styles,
     
    }}
   
-
- /> )
-}
-
+ /> );
+};
 
  
 

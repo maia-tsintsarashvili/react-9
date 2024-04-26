@@ -3,10 +3,10 @@ import { RoutesComponents } from './routes'
 
 
 const App = () => {
-  return 
+  return (
     <div>
  <RoutesComponents/>
-    </div>  ;
+    </div> ) ;
   
 };
 
