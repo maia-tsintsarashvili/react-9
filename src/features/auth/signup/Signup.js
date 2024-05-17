@@ -13,6 +13,7 @@ const {error} = useUser();
 const dispatch =useDispatch();
   return (
     <>
+    
      <AuthContainer>
         <Stack>
             <Text>

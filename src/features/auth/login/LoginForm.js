@@ -26,7 +26,10 @@ export const LoginForm = () => {
       .unwrap()
       .then(()=>{
      navigate("/");
-      });
+      })
+      .catch ((err)=>
+      { }
+    );
     };
 
   return (

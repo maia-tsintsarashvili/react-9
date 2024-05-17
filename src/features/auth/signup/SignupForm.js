@@ -16,7 +16,7 @@ export const SignupForm = () => {
   } =
   useForm ({
     mode:"onChange",
-    resolver:yupResolver(signupValidationSchema)
+    resolver:yupResolver(signupValidationSchema),
   });
 
   const {loading}=useUser ();

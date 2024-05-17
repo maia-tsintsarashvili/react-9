@@ -5,7 +5,8 @@ import { Snackbar, Text } from '../../../components/atoms'
 import { LoginForm } from './LoginForm'
 import { useUser } from '../../../hooks'
 import { useDispatch } from 'react-redux'
-import { clearError } from '../../../redux/slices'
+import { clearError } from '../../../redux'
+
 
 export const Login = () => {
   const {error } =useUser();
@@ -18,13 +19,15 @@ export const Login = () => {
           <LoginForm />
         </Stack>
       </AuthContainer>
-      <Snackbar
-        message={error}
-        onClose={() => {
-          dispatch(clearError());
-        }}
-        severity="error"
+      <Snackbar 
+      message={error}
+      onClose={()=>{
+        dispatch(clearError());
+      }}
+      severity='error'
+       
       />
+      
       
     </>
   );

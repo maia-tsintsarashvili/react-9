@@ -1,6 +1,8 @@
 import { FormControl, styled } from '@mui/material'
 import React from 'react'
 
+
+
 const styledFormContainer = styled(FormControl) (()=> ({
     marginTop:"15px",
     display:"flex",
@@ -10,12 +12,16 @@ const styledFormContainer = styled(FormControl) (()=> ({
 
  export const FormContainer = ({children}) => {
   return 
-    (
+    
      <styledFormContainer>
         {children}
-     </styledFormContainer>);
-         
-  
+     </styledFormContainer>;
+        
 };
+
+
+
+
+
 
 
